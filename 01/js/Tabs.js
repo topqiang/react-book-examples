@@ -43,9 +43,9 @@ class Tabs extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if ('activeIndex' in nextProps) {
+    if ('defaultActiveIndex' in nextProps) {
       this.setState({
-        activeIndex: nextProps.activeIndex,
+        activeIndex: nextProps.defaultActiveIndex,
       });
     }
   }
